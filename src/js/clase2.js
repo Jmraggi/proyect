@@ -1,98 +1,119 @@
-///* ========================================================================================== */
-///* ================================Control de flujos========================================= */
-///* ========================================================================================== */
+
+//!================================================================================================================================================== 
+//!=======================================================Control de flujos========================================================================== 
+//!================================================================================================================================================== 
+
+
+//*============================================================DESAFIO===============================================================================
+
+//      >>Consigna: Crea un algoritmo que solicite al usuario uno o más valores ingresados por prompt(), compare las
+//      entradas y,en función de ciertas condiciones, muestre por consola o alert()el resultado según los valores
+//      ingresados y las condiciones cumplidas.
+
+//*     >> Ejemplo:
+//      Pedir número mediante prompt y si es mayora 1000 mostrar un alert.
+//      Pedir un texto mediante prompt, y si es igual a "Hola" mostrar un alerta por consola.
+//      Pedir un número por prompt y evaluar si está entre 10 y 50. En caso positivo mostrar un alert.
+
+let numeroUno = prompt("Ingresa un numero que desee");
+
+if (numeroUno >= 1000){
+    alert("el numero es grande pa, mas que 1000");
+}else{
+    alert("Que numero chiquito elegiste, es menor que 1000");
+}
+
+let textoIngresado = prompt("Ingresar un texto");
+if((textoIngresado =="HOLA") || (textoIngresado =="Hola")){
+    alert("Buenos dias/tardes/noches genio!");
+}else{
+    alert("Saludame malo");
+}
+
+let numeroDos = prompt("Ingresa otro numero")
+if ((numeroDos >= 10) && (numeroDos <= 50)){
+    alert("El numero esta entre 10 y 50");
+}else{
+    alert("El numero NO esta entre 10 y 50");
+}
 
 
 
-///* ==================================EJERCITACIONES========================================== */
 
 
-//Se declaran las variables, sean locales o no
-// var nombre = "Juan Manuel";
-// let apellido = "Raggi"; 
-// const DNI = 39098714;           //las constantes ponerlas en MAYUSCULA para poder diferenciarlas
-// let direccion;                  
-// direccion = "Catamarca 1788";
+//?     Hasta el momento todas las intrucciones que escribimos se ejecutan en linea recta, una sentencia despues del a otra.
+//?     La idea del control de flujos es marcar puntos en nuestra aplicacion, donde a partir de alguna evaluacion, nuestro programa
+//?     pueda tomar varios caminos posibles de accion
 
-// nombre = "Esteban"; //se pueden cambiar valores de let y var pero no los de const
-// apellido = "Perez";
+// TODO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Valores booleanos<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
 
+//?     Las variables booleanas son las que SOLO TIENEN DOS VALORES (TRUE O FALSE)
+//?     Ejemplo: 
 
-///* =====================================DESAFIO============================================== */
+//  let edad = 18
 
-
-//      >> Consigna:Crea un script en JS que le solicite al usuario ingresar mínimo1(un)dato.
-//      Luego,con JavaScript,realiza operaciones matemáticasode concatenación sobre las
-//      entradas teniendo en cuenta el tipo de dato.Al finalizar mostrar el resultados con alert() o console.log()
-
+//  if(edad >= 18){
+//      alert('Puede beber alcohol');
+//  }else{
+//      alert("vaya a dormir señor")
+//  }
 
 
 
+// TODO  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Estructura IF-ELSE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
 
+//?     La estructura mas utilizada, corresponde al famoso, si la condicion se cumple, ejecuta un codigo.
+//?     Cuando comparamos dos valores a traves de un operador de comparacion, esta operacion siempre se
+//?     resuelve en TRUE o FALSE, el primer operador de comparacion es "=="
+//?     Para entender el ELSE debemos relacionarlo de la siguiente manera:
+//?     "Si se cumple esta condicion, haslo; si no se cumple, haz esto otro".
 
+// /* si-condicion*/
+// if(true){
+// /*bloque de código a ejecutar si es verdadero*/
+//     console.log("vas a ver este mensaje");
+// }
 
+// Ejemplo de condicionales
 
-// /*   Declarar una variable significa CREARLA. Para esto usamos la palabras reservadas (var,let o const).
-//      En proramacion no se puede usar acentos, o letra ñ. Dentro de estas variables podemos guardar valores,
-//      Se puede asociar con number (valor numerico), string (valor de texto).
-
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Let y Const<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-//      Let y const son declaraciones, una vriable let puede cambiar en el  trasncurso de la aplicacion,
-//      Una constante (Const) recibe una unica asigancion. la diferencia entre let,const y var, es que
-//      esta ultima tiene un scope global.
-
-
-//  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Operaciones basicas<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-// //     Con variables de valores numericos, podes realizar operaciones matematicas: sumas, restas, etc.
-
-// let textoA = "CODER";
-// let textoB = "HOUSE";
-// const BLANCO = 11;
-// // Concatenar textoAytextob("CODER"+"HOUSE"="CODERHOUSE")
-// let resultadoA=textoA+textoB;
-// // Concatenar textoBy1("HOUSE"+1 = "HOUSE1)"')
-// let resultadoB=textoB+ 1;
-// // Concatenar textoA,BLANCOytextoB("CODER" + "" + "HOUSE"="CODER HOUSE")
-// let resultadoC=textoA+BLANCO+textoB;
-
-// console.log(resultadoA);
-// console.log(resultadoB);
-// console.log(resultadoC);
+// let unNumero = 5;
+// if (unNumero == 5){
+//     console.log("Si es 5 as a ver este mensaje");
+// }else{
+//     console.log("Si no es 5 vas a ver este mensaje");
+// }
+    
                                       
 
-//* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Operaciones basicas<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//TODO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Operadores Logicos<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-// //     Con variables de valores numericos, podes realizar operaciones matematicas: sumas, restas, etc.
-
-// let textoA = "CODER";
-// let textoB = "HOUSE";
-// const BLANCO = 11;
-// // Concatenar textoAytextob("CODER"+"HOUSE"="CODERHOUSE")
-// let resultadoA=textoA+textoB;
-// // Concatenar textoBy1("HOUSE"+1 = "HOUSE1)"')
-// let resultadoB=textoB+ 1;
-// // Concatenar textoA,BLANCOytextoB("CODER" + "" + "HOUSE"="CODER HOUSE")
-// let resultadoC=textoA+BLANCO+textoB;
-
-// console.log(resultadoA);
-// console.log(resultadoB);
-// console.log(resultadoC);
+//?     Disponemos de los operadores logicos habituales como son: es igual, es distinto, menos, mayor, o igual,nayor o igual,
+//?     operador and(&&), or(||) y not(!)
 
 
-//* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Prompt,consola,alert<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//?     Ejemplo condicional compuesta con &&
 
-// /*   prompt() mostrar un cuadro de dialogo para que el usuario ingrese un dato.
-//      ejemplo: let nombreIngresado = prompt("Ingrese su nombre porfavor");
-//      Esto queda almacenado en la variable nombreIngresado
+// let nombreIngresado = prompt("Ingresar nombre");
+// let apellidoIngresado = prompt("Ingresar apellido");
 
-//      console.log() muestra el mensaje en la consola
-//      ejemplos: console.log("Mensaje de prueba") >>Yo le digo que mostrar
-//      let nombre = "juan perez" 
-//      console.log(nombre) >> Le paso por parametros lo que quiero que muestre
+// if((nombreIngresado !="") && (apellidoIngresado !="")){
+//     alert("Nombre: " + " " + nombreIngresado + "\nApellido: " + " " + apellidoIngresado);
+// }else{
+//     alert("Error: Ingresar nombre y apellido");
+// }
 
-//      alert() muestra el mensaje en una ventana emergente
-//      ejemplos: alert("Mensaje de prueba") >>Yo le digo que mostrar
+//?     Ejemplo condicional compuesta con ||
+
+// let colorIngresado = prompt("Ingresar un color");
+// if((colorIngresado =="Rojo") || (colorIngresado =="rojo")){
+//     alert("El color ingresado es rojo");
+// }else{
+//     alert("El color ingresado NO ES rojo");
+// }
+
+
+
+
+//TODO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PROMPT, CONSOLE, ALERT<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
