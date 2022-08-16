@@ -1,3 +1,33 @@
+//! Contenidos
+
+let contenidos = document.getElementById("cardsContenidos");
+let cursos = []
+
+
+$(document).ready(function() {
+
+  fetch("../json/contenidos.json")
+  .then ( (res) => res.json())
+  .then ( (data) =>{
+    cursos = data;
+
+    data.forEach((curso) => {
+      let contenido = document.createElement("div")
+      contenido.className = "col-lg-4 col-md-6 py-4"
+      contenido.innerHTML = `
+      <div class="service-item  position-relative">
+          <h3>${curso.titulo}</h3>
+          <p>${curso.descripcion}</p>
+          <a href="${curso.url}" class="readmore stretched-link">Ingresar</a>
+      </div>
+      `
+
+      contenidos.append(contenido);
+    });
+    
+    })
+});
+
 
 
 
@@ -90,16 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }));
     }
   
-    /**
-     * Initiate glightbox
-     */
-    const glightbox = GLightbox({
-      selector: '.glightbox'
-    });
-  
-    /**
-     * Porfolio isotope and filter
-     */
     let portfolionIsotope = document.querySelector('.portfolio-isotope');
   
     if (portfolionIsotope) {
@@ -133,80 +153,5 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   
     }
-  
-    /**
-     * Init swiper slider with 1 slide at once in desktop view
-     */
-    new Swiper('.slides-1', {
-      speed: 600,
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-      },
-      slidesPerView: 'auto',
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      }
-    });
-  
-    /**
-     * Init swiper slider with 2 slides at once in desktop view
-     */
-    new Swiper('.slides-2', {
-      speed: 600,
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-      },
-      slidesPerView: 'auto',
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20
-        },
-  
-        1200: {
-          slidesPerView: 2,
-          spaceBetween: 20
-        }
-      }
-    });
-  
-    /**
-     * Initiate pURE cOUNTER
-     */
-    new PureCounter();
-  
-    /**
-     * Animation on scroll function and init
-     */
-    function aos_init() {
-      AOS.init({
-        duration: 800,
-        easing: 'slide',
-        once: true,
-        mirror: false
-      });
-    }
-    window.addEventListener('load', () => {
-      aos_init();
-    });
   
   });

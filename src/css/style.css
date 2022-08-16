@@ -23,6 +23,14 @@
     align-items: center;
 }
 
+.textoCentro{
+    padding-top: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+}
+
 
 
 /* ----------------------------------------------------------------             --------------------------------        ------------------------------- */

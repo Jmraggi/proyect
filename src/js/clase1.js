@@ -38,7 +38,7 @@ let multiplicar = num1 * num2;
 
 console.log("Los datos ingresados son: " + nombre, num1, num2);
 console.log("---------------------------------------------------------------------");
-console.log("---------------------------------------------------------------------");Juan
+console.log("---------------------------------------------------------------------");
 console.log("Primero dejame saludarte "+ nombre);
 console.log("---------------------------------------------------------------------");
 console.log("La suma es: " + suma);
