@@ -1,7 +1,7 @@
 [
-    {"id":0, "titulo": "Sintaxis y Variables", "descripcion": "Conocer los fundamentos del lenguaje, identificar codigo, aprender que es una variable, como declararla, asignarla y cambiar el valor.", "url": "sintaxisYVariables.html"},   
-    {"id":1, "titulo": "Control de Flujos", "descripcion": "Entender que es un condicional, como JS evalua en V y F, identificar operadores logicos.", "url": "controlDeFLujos.html"},
-    {"id":2, "titulo": "Ciclos / iteraciones", "descripcion": "Comprender que es un ciclo o bucle, conocer los tipos de ciclos y como combinarlos con operadores logicos, ciclos y funciones.", "url": "ciclosIteraciones.html"},  
+    {"id":0, "titulo": "Sintaxis y Variables", "descripcion": "Conocer los fundamentos del lenguaje, identificar codigo, aprender que es una variable, como declararla, asignarla y cambiar el valor.", "url": "partition/sintaxisYVariables.html"},   
+    {"id":1, "titulo": "Control de Flujos", "descripcion": "Entender que es un condicional, como JS evalua en V y F, identificar operadores logicos.", "url": "partition/controlDeFLujos.html"},
+    {"id":2, "titulo": "Ciclos / iteraciones", "descripcion": "Comprender que es un ciclo o bucle, conocer los tipos de ciclos y como combinarlos con operadores logicos, ciclos y funciones.", "url": "partition/ciclosIteraciones.html"},  
     {"id":3, "titulo": "Funciones", "descripcion": "Conceptualizar funcion, identificar parametros, comprender que es el Scope y definir funcion anonima y funcion flecha.", "url": "#"},
     {"id":4, "titulo": "Objetos", "descripcion": "Comprender que es un objeto, que es una funcion constructora, analizar las propiedades y sus metodos. Conocer que es una declaracion de clases.", "url": "#"},
     {"id":5, "titulo": "Arrays", "descripcion": "Definir Arrays, aprender como acceder y recorrerlas, reconocer propiedades y metodos, comprender las utilidades de la combinacion arrays+objetos.", "url": "#"},

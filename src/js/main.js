@@ -3,14 +3,11 @@
 let contenidos = document.getElementById("cardsContenidos");
 let cursos = []
 
+$(document).ready(function() { //.ready hace que una vez este cargada la pagina se cargue la funcion
 
-$(document).ready(function() {
-
-  fetch("../json/contenidos.json")
-  .then ( (res) => res.json())
+  fetch("../json/contenidos.json") //Traigo el json
+  .then ( (res) => res.json()) //Transformo el json
   .then ( (data) =>{
-    cursos = data;
-
     data.forEach((curso) => {
       let contenido = document.createElement("div")
       contenido.className = "col-lg-4 col-md-6 py-4"
