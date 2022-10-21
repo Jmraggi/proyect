@@ -1,9 +1,9 @@
-let contenidos = document.getElementById("cardsContenidos");
+let contenidos = document.getElementById("cardsEjercicios");
 let cursos = []
 
 $(document).ready(function() { //.ready hace que una vez este cargada la pagina se cargue la funcion
 
-  fetch("../json/contenidos.json") //Traigo el json
+  fetch("../json/ejercicios.json") //Traigo el json
   .then ( (res) => res.json()) //Transformo el json
   .then ( (data) =>{
     data.forEach((curso) => {
@@ -12,7 +12,7 @@ $(document).ready(function() { //.ready hace que una vez este cargada la pagina 
       contenido.innerHTML = `
       <div class="service-item  position-relative">
           <h3>${curso.titulo}</h3>
-          <p>${curso.descripcion}</p>
+          <img src="${curso.img}" class="img-thumbnail" alt="">
           <a href="${curso.url}" class="readmore stretched-link">Ingresar</a>
       </div>
       `
