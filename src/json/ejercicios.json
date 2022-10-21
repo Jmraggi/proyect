@@ -1,0 +1,15 @@
+[
+    {"id":0, "titulo": "Sintaxis y Variables", "img": "../media/E1.png", "url": "practica/ejercicio1.html"},   
+    {"id":1, "titulo": "#", "img": "Entender que es un condicional, como JS evalua en V y F, identificar operadores logicos.", "url": "partition/controlDeFLujos.html"},
+    {"id":2, "titulo": "#", "img": "Comprender que es un ciclo o bucle, conocer los tipos de ciclos y como combinarlos con operadores logicos, ciclos y funciones.", "url": "partition/ciclosIteraciones.html"},  
+    {"id":3, "titulo": "#", "img": "Conceptualizar funcion, identificar parametros, comprender que es el Scope y definir funcion anonima y funcion flecha.", "url": "#"},
+    {"id":4, "titulo": "#", "img": "Comprender que es un objeto, que es una funcion constructora, analizar las propiedades y sus metodos. Conocer que es una declaracion de clases.", "url": "#"},
+    {"id":5, "titulo": "#", "img": "Definir Arrays, aprender como acceder y recorrerlas, reconocer propiedades y metodos, comprender las utilidades de la combinacion arrays+objetos.", "url": "#"},
+    {"id":6, "titulo": "#", "img": "Comprender que es una funcion de orden superior, dominar los metodos avanzados de arrays, conocer y utilizar las funciones math y manejar fechas con date.", "url": "#"},
+    {"id":7, "titulo": "#", "img": "Comprender DOM, identificar estructura y tipos de nodo. conocer los metodos de acceso, aprender como agregar/quitar nodos, entender la importancia de la plantilla de texto en ES6.", "url": "#"},
+    {"id":8, "titulo": "#", "img": "Comprender que son los eventos y cuales son los mas comunes, aprender a definirlos, entender como escucharlos e identificar la informacion.","url": "#"},
+    {"id":9, "titulo": "#", "img": "Definir storage, identificar localStorage y sessionStorage, definir JSON y entender su alcance.", "url": "#"},
+    {"id":10, "titulo": "#", "img": "Simplificar operadores ternarios y logicos, entender desestructuracion, comprender operador spread e identificar oportunidades de optimizacion.", "url": "#"},
+    {"id":11, "titulo": "#", "img": "Aprender que es una libreria, comprender ventajas y beneficios, entender el proceso de investigacion e integracion.", "url": "#"},
+    {"id":12, "titulo": "#", "img": "Se basa en una serie de ejercicios de javascript basicos con tematica de los simpsons.", "url": "#"}
+]
